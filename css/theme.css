@@ -1,0 +1,393 @@
+nav {
+    gap: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.menu {
+    align-items: center;
+    gap: clamp(8px, 1.8vw, 24px);
+}
+
+.menu a {
+    font-size: clamp(12px, 1.5vw, 18px);
+}
+
+.theme-toggle,
+.newsletter-nav-button {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 12px;
+    border: 1px solid #39ff14;
+    border-radius: 6px;
+    background: #20252b;
+    color: white;
+    font: inherit;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.newsletter-nav-button:hover,
+.theme-toggle:hover {
+    background: #39ff14;
+    color: #20252b;
+}
+
+.newsletter-nav-button:focus-visible,
+.theme-toggle:focus-visible {
+    outline: 2px solid #39ff14;
+    outline-offset: 3px;
+}
+
+body.light-mode {
+    background: #eef1f4;
+    color: #20252b;
+}
+
+body.light-mode .website {
+    background-color: #ffffff;
+}
+
+body.light-mode nav,
+body.light-mode .product-card,
+body.light-mode .newsletter-button,
+body.light-mode .newsletter-form button,
+body.light-mode .newsletter-home-link {
+    background-color: #e4e9ee;
+}
+
+body.light-mode .menu a,
+body.light-mode .advantages strong,
+body.light-mode .location h1,
+body.light-mode .location h2,
+body.light-mode .locatie-adres strong,
+body.light-mode .newsletter-button,
+body.light-mode .newsletter-form button,
+body.light-mode .newsletter-home-link {
+    color: #20252b;
+}
+
+body.light-mode .menu a:hover {
+    color: #16820b;
+}
+
+body.light-mode .locatie,
+body.light-mode .laptop,
+body.light-mode .headset,
+body.light-mode .pc,
+body.light-mode .product-card img {
+    background-color: #f1f3f5;
+}
+
+body.light-mode .product-card {
+    border-color: #c9d1d9;
+}
+
+body.light-mode .product-info > p:not(.product-price),
+body.light-mode .image-license,
+body.light-mode .locatie-text,
+body.light-mode .locatie-adres {
+    color: #4b5560;
+}
+
+body.light-mode .product-info h3 {
+    color: #20252b;
+}
+
+body.light-mode .newsletter-form input {
+    background: #ffffff;
+    color: #20252b;
+}
+
+body.light-mode .newsletter-card {
+    background: #f7f9fb;
+    border-color: #d9e0e7;
+}
+
+body.light-mode .newsletter-description,
+body.light-mode .newsletter-benefits,
+body.light-mode .newsletter-privacy,
+body.light-mode .newsletter-success > p:last-child {
+    color: #4b5560;
+}
+
+body.light-mode .newsletter-form button:hover,
+body.light-mode .newsletter-home-link:hover {
+    background: #39ff14;
+    color: #20252b;
+}
+
+.newsletter {
+    max-width: 760px;
+    padding: clamp(32px, 7vw, 72px) 0;
+}
+
+.newsletter-card {
+    padding: clamp(24px, 6vw, 48px);
+    border: 1px solid #3c454c;
+    border-radius: 14px;
+    background: #292e33;
+    box-shadow: 0 12px 36px #00000030;
+}
+
+.newsletter-eyebrow {
+    margin-bottom: 10px;
+    color: #39ff14;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.newsletter-card h1 {
+    margin-bottom: 14px;
+    font-size: clamp(26px, 5vw, 38px);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+.newsletter-description,
+.newsletter-success > p:last-child {
+    max-width: 58ch;
+    color: #d3d7da;
+    line-height: 1.6;
+}
+
+.newsletter-benefits {
+    display: grid;
+    gap: 9px;
+    margin: 24px 0;
+    padding-left: 22px;
+    color: #d3d7da;
+    line-height: 1.5;
+}
+
+.newsletter-form {
+    display: grid;
+    gap: 18px;
+    max-width: none;
+}
+
+.newsletter-field {
+    display: grid;
+    gap: 8px;
+}
+
+.newsletter-field label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.newsletter-form input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    border: 1px solid #67727c;
+    border-radius: 6px;
+    background: #20252b;
+    color: white;
+}
+
+.newsletter-form input:focus-visible {
+    border-color: #39ff14;
+    outline: 2px solid #39ff14;
+    outline-offset: 2px;
+}
+
+.newsletter-form button {
+    justify-self: stretch;
+    min-height: 48px;
+    border: 1px solid #39ff14;
+    font-weight: 700;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.newsletter-privacy {
+    margin: 16px 0 0;
+    color: #c4c9cd;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.newsletter-error {
+    margin: 0 0 18px;
+    padding: 12px 14px;
+    border: 1px solid #ff7777;
+    border-radius: 6px;
+    background: #ff77771a;
+    line-height: 1.5;
+}
+
+.newsletter-success {
+    margin-bottom: 24px;
+}
+
+.newsletter-success .newsletter-eyebrow {
+    margin-bottom: 10px;
+}
+
+.newsletter-home-link {
+    min-height: 44px;
+    border-radius: 6px;
+}
+
+@media (max-width: 760px) {
+    nav {
+        display: grid;
+        height: auto;
+        min-height: 0;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .menu {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .newsletter-nav-button,
+    .theme-toggle {
+        min-height: 44px;
+        justify-content: center;
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 48px 16px 36px;
+    }
+
+    .hero h1 {
+        font-size: clamp(30px, 8vw, 42px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero h2 {
+        font-size: clamp(20px, 6vw, 26px);
+    }
+
+    .content {
+        width: min(90%, 560px);
+    }
+
+    .intro,
+    .bottom {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .intro-image,
+    .shop,
+    .advantages-list {
+        min-width: 0;
+    }
+
+    .laptop {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .locatie {
+        width: 90%;
+        margin: 28px auto;
+        padding: 24px 18px;
+    }
+
+    .location iframe {
+        height: clamp(260px, 65vw, 350px);
+    }
+
+    .newsletter {
+        padding: 40px 0;
+    }
+
+    .newsletter h1 {
+        font-size: clamp(24px, 7vw, 34px);
+        overflow-wrap: anywhere;
+    }
+
+    .newsletter-card h1 {
+        font-size: clamp(26px, 7vw, 34px);
+    }
+
+    .newsletter-button {
+        margin-left: 0;
+        font-size: clamp(18px, 6vw, 28px);
+    }
+}
+
+@media (max-width: 520px) {
+    .menu {
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .website {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content {
+        width: calc(100% - 36px);
+    }
+
+    .intro-text p,
+    .newsletter p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .advantages li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .product-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .product-category > h2 {
+        font-size: 22px;
+    }
+
+    .product-card img {
+        height: 190px;
+    }
+}
+
+@media (max-width: 360px) {
+    nav {
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .logo {
+        width: 96px;
+    }
+
+    .newsletter-nav-button,
+    .theme-toggle {
+        padding: 8px;
+        font-size: 11px;
+    }
+}
